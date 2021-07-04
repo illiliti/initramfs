@@ -1,0 +1,9 @@
+# vim: set ft=sh:
+# shellcheck shell-sh
+
+copy_file "${zfs_cache#*=}" /etc/zfs/zpool.cache 600 0
+
+copy_module zfs
+
+copy_binary zfs
+copy_binary zpool
